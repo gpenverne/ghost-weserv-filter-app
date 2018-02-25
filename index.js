@@ -3,15 +3,13 @@ var App = require('ghost-app'),
     WeservHelperApp;
 
 WeservHelperApp = App.extend({
-  install: function () {
-      this.ghost.helpers.register('weserv', this.weserv);
-  },
+  install: function () {  },
   uninstall: function () {},
   activate: function () {
-    this.ghost.helpers.register('weserv', this.weserv);
+    this.ghost.helpers.register('weserv', this.weservHelper);
   },
   deactivate: function () {},
-  weserv: function(url, width, height) {
+  weservHelper: function(url, width, height) {
     if(!url) {
       return "";
     }
