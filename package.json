@@ -1,5 +1,5 @@
 {
-  "name": "weservFilterApp",
+  "name": "WeservHelperApp",
   "version": "1.0.0",
   "description": "Use images.weserv.nl to cache your images on your ghost blog",
   "main": "index.js",
@@ -26,7 +26,7 @@
   },
   "ghost": {
       "permissions": {
-          "helpers": ["weserv"]
+          "helpers": ["weservHelperApp"]
       }
   }
 }
