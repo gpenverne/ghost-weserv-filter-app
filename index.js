@@ -2,8 +2,8 @@
 var App = require('ghost-app'),
     WeservHelperApp;
 
-WeservHelperApp = App.extend({
-  install: function () {  },
+weservHelperApp = App.extend({
+  install: function () {},
   uninstall: function () {},
   activate: function () {
     this.ghost.helpers.register('weserv', this.weservHelper);
@@ -28,4 +28,4 @@ WeservHelperApp = App.extend({
  });
 
 
-module.exports = WeservHelperApp;
+module.exports = weservHelperApp;
