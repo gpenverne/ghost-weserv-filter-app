@@ -1,8 +1,8 @@
 
 var App = require('ghost-app'),
-    FilterApp;
+    WeservHelperApp;
 
-WeservFilterApp = App.extend({
+WeservHelperApp = App.extend({
   install: function () {},
   uninstall: function () {},
   activate: function () {
