@@ -23,5 +23,10 @@
   "homepage": "https://github.com/gpenverne/ghost-weserv-filter-app#readme",
   "dependencies": {
     "ghost-app": "0.0.3"
+  },
+  "ghost": {
+      "permissions": {
+          "helpers": ["weserv"]
+      }
   }
 }
