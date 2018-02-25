@@ -3,7 +3,9 @@ var App = require('ghost-app'),
     WeservHelperApp;
 
 WeservHelperApp = App.extend({
-  install: function () {},
+  install: function () {
+      this.ghost.helpers.register('weserv', this.weserv);
+  },
   uninstall: function () {},
   activate: function () {
     this.ghost.helpers.register('weserv', this.weserv);
@@ -16,12 +18,12 @@ WeservHelperApp = App.extend({
     var url = url.replace(/(^\w+:|^)\/\//, '');
     var baseWeservUrl = 'https://images.weserv.nl/?';
     if (width) {
-        baseWeservUrl = baseWeservUrl+'w='+width;
+        baseWeservUrl = baseWeservUrl+'&w='+width;
     }
     if (height) {
-        baseWeservUrl = baseWeservUrl+'h='+height;
+        baseWeservUrl = baseWeservUrl+'&h='+height;
     }
-    baseWeservUrl = baseWeservUrl+'url='+url;
+    baseWeservUrl = baseWeservUrl+'&url='+url;
 
     return baseWeservUrl;
   }
