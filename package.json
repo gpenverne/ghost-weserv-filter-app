@@ -1,0 +1,27 @@
+{
+  "name": "ghost-weserv-filter-app",
+  "version": "1.0.0",
+  "description": "Use images.weserv.nl to cache your images on your ghost blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gpenverne/ghost-weserv-filter-app.git"
+  },
+  "keywords": [
+    "ghost",
+    "weserv",
+    "cache"
+  ],
+  "author": "gpenverne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gpenverne/ghost-weserv-filter-app/issues"
+  },
+  "homepage": "https://github.com/gpenverne/ghost-weserv-filter-app#readme",
+  "dependencies": {
+    "ghost-app": "0.0.3"
+  }
+}
