@@ -28,4 +28,4 @@ WeservHelperApp = App.extend({
  });
 
 
-module.exports = WeservFilterApp;
+module.exports = WeservHelperApp;
