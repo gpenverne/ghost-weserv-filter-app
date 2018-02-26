@@ -1,7 +1,12 @@
 'use strict';
 
 var App = require('ghost-app');
+var path = require('path');
 var WeservApp;
+
+const currentPath = __dirname;
+const helpersPath = path.normalize(__dirname+'/../../../current/core/server/helpers');
+var proxy = require(helpersPath+'/proxy');
 
 WeservApp = App.extend({
     activate: function (ghost) {
@@ -30,4 +35,5 @@ WeservApp = App.extend({
         }
     }
 });
+
 module.exports = WeservApp;
